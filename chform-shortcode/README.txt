@@ -5,34 +5,46 @@ Tags: shortcode, canadahelps
 Requires at least: 4.7
 Tested up to: 6.0.2
 Stable tag: 1.0.0
+Requires PHP: 5.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Snoka Media's CanadaHelps donation shortcode plugin adds a shortcode to embed CanadaHelps forms with support for undocumented URL parameters that can be used with donation widgets on external pages and automatic language selection.
+A plugin that adds a shortcode to embed CanadaHelps donation forms on your WordPress site. With support for URL parameters and automatic language selection, this plugin makes it easy to accept donations from your site visitors.
+
+== Key Features ==
+- Embed CanadaHelps donation forms on your site with a shortcode
+- Use URL parameters to customize the donation form
+- Automatic language selection based on user's locale
 
 == Installation ==
 1. Download and unzip the plugin
-2. Add the shortcode to the pages you want to display the form e.g.[chform id=12345]. Enter the page id provided by CanadaHelps.
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Add the shortcode to the pages you want to display the form, using the following format: [chform id=12345]. Replace "12345" with the page id provided by CanadaHelps.
 
-== Attributes ==
-Required: id
-The page id from the embed code provided by CanadaHelps.
+== Shortcode Attributes ==
+- **id** (required): The page id from the embed code provided by CanadaHelps.
+- **language** (optional): Specify the language of the donation form. Options: "en" for English or "fr" for French. If not specified, the plugin will use the user's locale to determine the language.
 
-Optional: language
-Options: en or fr
-Language is otherwise automatically set with get_locale()
+== URL Parameters ==
+You can use the following URL parameters to customize the donation form:
 
-== URL Parameter Usage ==
-Example:
+- **amount**: The amount that the user will donate. Must be at least 3 (CanadaHelps' minimum).
+- **frequency**: The frequency of the donation. Currently, the only option is "monthly".
+
+### Example
+
+To specify a donation amount of $1000 with a monthly frequency, you would use the following URL parameters:
+
 ?amount=1000&frequency=monthly
 
-amount:
-It requires a minimum amount of 3 which is CanadaHelps' minimum.
+== Troubleshooting ==
+If you encounter any issues with the plugin, try the following:
 
-frequency:
-The only option is monthly.
+1. Make sure you have entered the correct page id in the shortcode
+2. Check the CanadaHelps website to ensure that their service is functioning properly
+3. If the issue persists, try deactivating and reactivating the plugin, or contact us for further assistance
 
-== Third-Party Service ==
+== Disclaimer ==
 Our plugin relies on a third-party service, CanadaHelps (https://www.canadahelps.org/), for displaying your CanadaHelps forms with our shortcode. By using our plugin, you acknowledge and agree to be bound by the CanadaHelps Terms of Use (https://www.canadahelps.org/en/terms-of-use/) and Privacy Policy (https://www.canadahelps.org/en/privacy-policy/). Please make sure to review these documents before using our plugin.
 
 We are not affiliated with CanadaHelps and are not responsible for their services or any issues that may arise from the use of their services. For any questions or issues related to CanadaHelps, please refer to their website (https://www.canadahelps.org/) or contact them directly.
