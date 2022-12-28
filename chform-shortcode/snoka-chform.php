@@ -3,7 +3,7 @@
 Plugin Name: Snoka Shortcode for CanadaHelps
 Plugin URI:  https://github.com/snokamedia/chform-shortcode
 Description: A shortcode to embed CanadaHelps' donation form with support for URL parameters.
-Version:     1.0.0
+Version:     1.0.1
 Author:      Snoka Media
 Author URI:  https://www.snoka.ca/
 License:     GPLv3
