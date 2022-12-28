@@ -38,6 +38,7 @@ function chform_shortcode($atts)
 		array(
 			'id'       => '',
 			'language' => $lang,
+			'height'   => '1884px',
 		),
 		$atts,
 		'chform'
@@ -45,6 +46,7 @@ function chform_shortcode($atts)
 	// Sanitize atts
 	$atts['id'] = absint($atts['id']);
 	$atts['language'] = (in_array($atts['language'], array('en', 'fr'), true)) ? $atts['language'] : $lang;
+	$atts['height'] = preg_replace('/[^0-9pxemremvhvw%]/', '', $atts['height']);
 	// Get URL parameters and sanitize them
 	$amount = absint(get_query_var('amount'));
 	$monthly = sanitize_text_field(get_query_var('frequency'));
@@ -60,13 +62,15 @@ function chform_shortcode($atts)
 	} else {
 		// Construct output string using sprintf
 		$format = '<script id="ch_cdn_embed" type="text/javascript" src="https://www.canadahelps.org/secure/js/cdf_embed.js"></script> 
-				<iframe src="https://www.canadahelps.org/%s/dne/%s%s%s" title="iframe" scrolling="no" style="height: 1803px; border: 0px none; overflow: hidden;" allow="payment" id="iFrameResizer0" width="100%%"></iframe>';
+				<iframe src="https://www.canadahelps.org/%s/dne/%s%s%s" title="iframe" scrolling="no" style="height: %s; border: 0px none; overflow: hidden;" allow="payment" id="iFrameResizer0" width="100%%"></iframe>';
 
 		$output = vsprintf($format, array(
 			esc_attr($atts['language']),
 			esc_html($atts['id']),
 			esc_html($val),
-			esc_html($freq)
+			esc_html($freq),
+			esc_attr($atts['height']),
+			
 		));
 
 		// Sanitize the output string using wp_kses()

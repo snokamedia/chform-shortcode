@@ -24,6 +24,13 @@ A plugin that adds a shortcode to embed CanadaHelps donation forms on your WordP
 == Shortcode Attributes ==
 - **id** (required): The page id from the embed code provided by CanadaHelps.
 - **language** (optional): Specify the language of the donation form. Options: "en" for English or "fr" for French. If not specified, the plugin will use the user's locale to determine the language.
+- **height** (optional): This attribute allows you to set the height of the CanadaHelps donation form iframe. The default value is "1884px". You can specify a numeric value with a "px", "em", "rem", or "%" suffix. Example: [chform height="775px"]
+
+### Example
+
+To specify the French form with an iframe height of 775px, you would use the following attributes:
+
+[chform id=12345 language=fr height=775px]
 
 == URL Parameters ==
 You can use the following URL parameters to customize the donation form:
