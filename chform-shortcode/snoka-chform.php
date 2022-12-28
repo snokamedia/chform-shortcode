@@ -60,7 +60,7 @@ function chform_shortcode($atts)
 	} else {
 		// Construct output string using sprintf
 		$format = '<script id="ch_cdn_embed" type="text/javascript" src="https://www.canadahelps.org/secure/js/cdf_embed.js"></script> 
-				<iframe src="https://www.canadahelps.org/%s/dne/%s%s%s" title="iframe" scrolling="no" style="height: 1803px; border: 0px none; overflow: hidden;" allow="payment" id="iFrameResizer0" width="100%"></iframe>';
+				<iframe src="https://www.canadahelps.org/%s/dne/%s%s%s" title="iframe" scrolling="no" style="height: 1803px; border: 0px none; overflow: hidden;" allow="payment" id="iFrameResizer0" width="100%%"></iframe>';
 
 		$output = vsprintf($format, array(
 			esc_attr($atts['language']),
