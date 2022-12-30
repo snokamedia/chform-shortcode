@@ -1,5 +1,6 @@
 # Snoka Shortcode for CanadaHelps
-A plugin that adds a shortcode to embed CanadaHelps donation forms on your WordPress site. With support for URL parameters and automatic language selection, this plugin makes it easy to accept donations from your site visitors.
+
+Snoka Media's CanadaHelps donation shortcode plugin allows you to easily embed CanadaHelps donation forms on your WordPress site with support for URL parameters and automatic language selection. Display the form as a modal or embedded, and pre-fill the form with donation details using URL parameters.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/snoka)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W1FDHVR)
@@ -58,7 +59,7 @@ For example:
 ```
 http://example.com/page-with-form/?modal=true
 ```
-Note that this parameter will only have an effect if the `modal` attribute in the shortcode is also set to `true`. If the `modal` attribute is not set or is set to `false`, the form will not be displayed in a modal window regardless of the value of the `modal` URL parameter.
+Note that this parameter will only have an effect if the `modal` attribute in the shortcode is also set to `true`. If the `modal` shortcode attribute is not set or is set to `false`, the form will not be displayed in a modal window regardless of the value of the `modal` URL parameter.
 
 If the `modal` attribute is set to `true` but the `modal` URL parameter is set to `false`, the form will still be displayed in a modal window when the button is clicked.
 
@@ -78,11 +79,10 @@ If you are still experiencing issues, you can try clearing your browser's cache 
 
 If you encounter any bugs or have suggestions for improvements, you can submit a GitHub issue by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/your-username/repository-name) for this shortcode.
-2. Click on the "Issues" tab.
-3. Click the "New Issue" button.
-4. Fill out the issue form with a descriptive title, a detailed description of the problem or suggestion, and any relevant information such as error messages or screenshots.
-5. Click the "Submit new issue" button.
+1. Click on the "Issues" tab.
+2. Click the "New Issue" button.
+3. Fill out the issue form with a descriptive title, a detailed description of the problem or suggestion, and any relevant information such as error messages or screenshots.
+4. Click the "Submit new issue" button.
 
 Please note that there may be limited support for this shortcode, as it is provided as-is without any guarantees or warranties. If you require more extensive support, you may want to consider hiring a developer to assist you.
 

@@ -5,7 +5,7 @@ Tags: shortcode, canadahelps
 Requires at least: 4.7
 Tested up to: 6.1.1
 Stable tag: 2.0.0
-Requires PHP: 5.3
+Requires PHP: 7.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,6 @@ A plugin that adds a shortcode to embed CanadaHelps donation forms on your WordP
 - Customize the form's height and maximum width.
 - Display the form in a modal window or as a regular embedded form.
 - Pre-fill the form with a donation amount and frequency using URL parameters.
-- Customize the look of the form using CSS variables.
 
 == Installation ==
 1. Download and unzip the plugin
@@ -27,10 +26,10 @@ A plugin that adds a shortcode to embed CanadaHelps donation forms on your WordP
 == Shortcode Attributes ==
 - **id** (required): The page id from the embed code provided by CanadaHelps.
 - **language** (optional): Specify the language of the donation form. Options: "en" for English or "fr" for French. If not specified, the plugin will use the user's locale to determine the language.
-- **height**: The height of the form. Default is '1760px'.
-- **modal**: Whether to display the form in a modal window or not. Can be either 'true' or 'false'. Default is 'false'.
-- **max-width**: The maximum width of the form. Default is '940px'.
-- **button-text**: The text to be displayed on the button. Default is 'Donate Now'.
+- **height** (optional): The height of the form. Default is '1760px'.
+- **modal** (optional): Whether to display the form in a modal window or not. Can be either 'true' or 'false'. Default is 'false'.
+- **max-width** (optional): The maximum width of the form. Default is '940px'.
+- **button-text** (optional): The text to be displayed on the button. Default is 'Donate Now'.
 
 ### Examples
 

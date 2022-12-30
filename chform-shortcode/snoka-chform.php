@@ -178,11 +178,6 @@ function chform_shortcode($atts)
 		$css = preg_replace('/\s+/', '', $css);
 		$output = "<style>$css</style>";
 		wp_enqueue_script('chform-modal-script');
-
-		wp_localize_script('chform-modal-script', 'chformModalData', array(
-			'ajaxUrl' => admin_url('admin-ajax.php'),
-			'nonce' => wp_create_nonce('chform_modal_nonce'),
-		));
 		// Construct output string using sprintf
 		$format = '
 		<button id="chform-modal-button" class="chform-modal-button">%s</button>
@@ -277,7 +272,6 @@ function chform_shortcode($atts)
 				'width' => true,
 			),
 		));
-		$output = apply_filters('chform_shortcode_output', $output);
 		return "\n" . $output . "\n";
 	}
 }
