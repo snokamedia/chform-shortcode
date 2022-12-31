@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/snoka
 Tags: shortcode, canadahelps
 Requires at least: 4.7
 Tested up to: 6.1.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 Requires PHP: 7.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -30,6 +30,7 @@ A plugin that adds a shortcode to embed CanadaHelps donation forms on your WordP
 - **modal** (optional): Whether to display the form in a modal window or not. Can be either 'true' or 'false'. Default is 'false'.
 - **max-width** (optional): The maximum width of the form. Default is '940px'.
 - **button-text** (optional): The text to be displayed on the button. Default is 'Donate Now'.
+- **speed** (optional): To set the speed of the animation in the shortcode, use the "speed" attribute and enter a number in milliseconds (1000 = 1 second). The default speed is 300 milliseconds. Example: [shortcode speed="500"]
 
 ### Examples
 

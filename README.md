@@ -11,7 +11,8 @@ Snoka Media's CanadaHelps donation shortcode plugin allows you to easily embed C
 - Customize the form's height and maximum width.
 - Display the form in a modal window or as a regular embedded form.
 - Pre-fill the form with a donation amount and frequency using URL parameters.
-- Customize the look of the form using CSS variables.
+- Set the speed of the open/close animation.
+
 
 ## Installation
 1. Download and unzip the plugin
@@ -21,20 +22,21 @@ Snoka Media's CanadaHelps donation shortcode plugin allows you to easily embed C
 ## Shortcode Attributes
 - **id** (required): The page id from the embed code provided by CanadaHelps.
 - **language** (optional): Specify the language of the donation form. Options: "en" for English or "fr" for French. If not specified, the plugin will use the user's locale to determine the language.
-- **height**: The height of the form. Default is '1760px'.
-- **modal**: Whether to display the form in a modal window or not. Can be either 'true' or 'false'. Default is 'false'.
-- **max-width**: The maximum width of the form. Default is '940px'.
-- **button-text**: The text to be displayed on the button. Default is 'Donate Now'.
+- **height** (optional): The height of the form. Default is '1760px'.
+- **modal** (optional): Whether to display the form in a modal window or not. Can be either 'true' or 'false'. Default is 'false'.
+- **max-width** (optional): The maximum width of the form. Default is '940px'.
+- **button-text** (optional): The text to be displayed on the button. Default is 'Donate Now'.
+- **speed** (optional): To set the speed of the open/close animation in the shortcode, use the "speed" attribute and enter a number in milliseconds (1000 = 1 second). The default speed is 300 milliseconds.
 
 ## Examples
 To specify the French form with an iframe height of 775px, you would use the following attributes:
 ```
 [chform id=12345 language=fr height=775px]
 ```
-To specify the modal form with an iframe height of 735px, max-width of 500px, with the button text 'Donate' you would use the following attributes:
+To specify the modal form with an iframe height of 735px, max-width of 500px, speed of 125 milliseconds , with the button text 'Donate' you would use the following attributes:
 
 ```
-[chform id=12345 height=735px max-width=500px modal=true button-text='Donate']
+[chform id=12345 height=735px max-width=500px modal=true speed=125 button-text='Donate']
 ```
 ## URL Parameters
 In addition to the shortcode parameters, the form can also be customized using the following URL parameters:
