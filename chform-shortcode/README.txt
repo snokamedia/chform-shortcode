@@ -31,7 +31,7 @@ A plugin that adds a shortcode to embed CanadaHelps donation forms on your WordP
 - **modal** (optional): Whether to display the form in a modal window or not. Can be either 'true' or 'false'. Default is 'false'.
 - **max-width** (optional): The maximum width of the form. Default is '940px'.
 - **button-text** (optional): The text to be displayed on the button. Default is 'Donate Now'.
-- **speed** (optional): To set the speed of the animation in the shortcode, use the "speed" attribute and enter a number in milliseconds (1000 = 1 second). The default speed is 300 milliseconds. Example: [shortcode speed="500"]
+- **speed** (optional): To set the speed of the open/close animation in the shortcode, use the "speed" attribute and enter a number in milliseconds (1000 = 1 second). The default speed is 300 milliseconds.
 
 ### Examples
 
