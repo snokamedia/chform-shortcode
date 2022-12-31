@@ -17,6 +17,7 @@ A plugin that adds a shortcode to embed CanadaHelps donation forms on your WordP
 - Customize the form's height and maximum width.
 - Display the form in a modal window or as a regular embedded form.
 - Pre-fill the form with a donation amount and frequency using URL parameters.
+- Set the speed of the open/close animation.
 
 == Installation ==
 1. Download and unzip the plugin
@@ -38,9 +39,9 @@ To specify the French form with an iframe height of 775px, you would use the fol
 
 [chform id=12345 language=fr height=775px]
 
-To specify the modal form with an iframe height of 735px, max-width of 500px, with the button text 'Donate' you would use the following attributes:
+To specify the modal form with an iframe height of 735px, max-width of 500px, speed of 125 milliseconds, with the button text 'Donate' you would use the following attributes:
 
-[chform id=12345 height=735px max-width=500px modal=true button-text='Donate']
+[chform id=12345 height=735px max-width=500px modal=true speed=125 button-text='Donate']
 
 == URL Parameters ==
 
