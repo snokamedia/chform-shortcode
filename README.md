@@ -2,7 +2,6 @@
 
 Snoka Media's CanadaHelps donation shortcode plugin allows you to easily embed CanadaHelps donation forms on your WordPress site with support for URL parameters and automatic language selection. Display the form as a modal or embedded, and pre-fill the form with donation details using URL parameters.
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/snoka)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W1FDHVR)
 
 ## Key Features
